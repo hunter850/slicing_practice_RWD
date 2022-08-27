@@ -1,0 +1,74 @@
+:root {
+    --COLOR_WHITE: #ffffff;
+    --COLOR_BLUE: #007dd1;
+    --COLOR_ORANGE: #f06414;
+}
+*, h1, h2, h3, h4, h5, p, span, a {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 2560px;
+    margin: 0px auto 0px auto;
+}
+body.hide_scrollbar {
+    overflow-y: hidden;
+}
+body.lan_stop_scroll {
+    overflow-y: hidden;
+}
+body.mobile_stop_scroll {
+    overflow-y: hidden;
+}
+body.dark_screen {
+    position: relative;
+}
+body.dark_screen::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #00000088;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.visaully_hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+.mouse_pointer {
+    cursor: pointer;
+}
+.mouse_default {
+    cursor: default;
+}
+.class_hide {
+    display: none;
+}
+.animation_dropdown {
+    animation: Navbar_dropdown .3s;
+}
+@keyframes Navbar_dropdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media screen and (min-width:2560px) {
+    html {
+        background-color: #fff;
+    }
+}

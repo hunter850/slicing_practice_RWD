@@ -1,0 +1,31 @@
+nav {
+    width: 100%;
+    z-index: 2;
+}
+.nav_all {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.nav_all > div {
+    width: 48px;
+    height: 48px;
+}
+.nav_menu svg {
+    color: #353c42;
+}
+.nav_logo {
+    padding: 6px;
+}
+.nav_membership svg {
+    color: #00aeff;
+}
+.nav_membership:hover svg {
+    color: #00c6ff;
+}
+
+@media screen and (min-width:1280px) {
+    nav {
+        display: none;
+    }
+}

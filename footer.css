@@ -1,0 +1,327 @@
+footer {
+    width: 100%;
+}
+.social_media_all {
+    background: url("./images/mobile/footer/buy-bar-bg.jpg") center center / auto auto no-repeat;
+    padding: 12px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.social_media_decoration::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 8px solid hsla(0,0%,44.7%,.7);
+    position: absolute;
+    top: -7px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    transform: scaleY(0.2);
+}
+.social_media_all h4 {
+    font-size: 1.25rem;
+    color: #f6f6f6;
+    font-family: 'Big Noodle Too',impact,sans-serif;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    text-indent: .05rem;
+    font-style: italic;
+    text-align: center;
+    padding-top: 4px;
+}
+.social_media_all ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 8px 0px;
+}
+.social_media_all li {
+    width: 54px;
+    height: 54px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0px 12px;
+}
+.social_media_all li:hover {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.social_media_all a {
+    width: 100%;
+    height: 100%;
+}
+.social_media_all svg {
+    color: rgba(255, 255, 255, 0.5);
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+.social_media_all li:hover svg {
+    color: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+.dot::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    cursor: default;
+}
+/* ------------------------------------------------------------------ */
+.footer_all {
+    width: 100%;
+    background-color: #f0edf2;
+    padding: 20px 0px;
+    position: relative;
+}
+.language_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer_language {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer_language > div {
+    margin: 0px 6px;
+}
+.earth {
+    width: 24px;
+    height: 24px;
+}
+.earth svg {
+    width: 100%;
+    height: 100%;
+    color: #009dff;
+    transition: .2s;
+}
+.footer_language:hover .earth svg {
+    color: #66c4ff;
+}
+.footer_language p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    transition: .2s;
+}
+.footer_language:hover p {
+    color: rgba(0, 0, 0, 0.7);
+}
+.language_button {
+    width: 16px;
+    height: 16px;
+}
+.language_button svg {
+    width: 100%;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.5);
+    transition: .2s;
+}
+.footer_language:hover .language_button svg {
+    color: rgba(0, 0, 0, 0.7);
+}
+.language_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #283244, rgba(21,26,35,0.952941)), #000;
+    z-index: 10;
+    display: none;
+}
+.language_menu_top {
+    border-bottom: 1px solid hsla(0,0%,100%,0.15);
+    text-align: right;
+}
+.language_menu_close {
+    padding: 10.8px 12px;
+    display: inline-block;
+}
+.language_menu_close svg {
+    color: #009dff;
+    width: 24px;
+    height: 24px;
+}
+.language_menu_bottom {
+    width: 100%;
+    height: calc(100% - 49px);
+    padding: 10px 32px 15px 32px;
+}
+.language_menu_bottom a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-size: .8125rem;
+    color: #ffffff80;
+    line-height: 1.25rem;
+    padding: 5px 0px;
+    transition: .2s;
+}
+.language_menu_bottom a svg {
+    vertical-align: middle;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+}
+.language_menu_bottom a:hover {
+    color: #ffffffe0;
+}
+.blizzard_icon {
+    text-align: center;
+}
+.blizzard_icon a {
+    display: inline-block;
+    width: 122px;
+    margin: 30px 0px;
+}
+.blizzard_icon svg {
+    color: #009dff;
+    transition: .3s;
+}
+.blizzard_icon a:hover svg {
+    color: #0df2f2;
+}
+.footer_contact {
+    text-align: center;
+}
+.footer_contact > div {
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+}
+.footer_contact a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+.footer_contact a:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
+.vertical_bar::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 10px;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    transform: translateY(-50%);
+}
+.footer_battlenet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+.footer_battlenet span {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+.bnet_icon {
+    width: 14px;
+    height: 14px;
+}
+.footer_battlenet a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #0074e0;
+    font-weight: 300;
+}
+.footer_battlenet a:hover {
+    color: #000;
+}
+.footer_copyright_top {
+    text-align: center;
+}
+.footer_copyright_top span {
+    font-size: .75rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 300;
+    line-height: 1.4;
+}
+.footer_copyright_bottom {
+    text-align: center;
+    font-size: .75rem;
+}
+.footer_copyright_bottom span {
+    font-size: .75rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 300;
+    line-height: 1.4;
+}
+.footer_copyright_bottom a {
+    text-decoration: none;
+    font-size: .75rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 300;
+    line-height: 1.4;
+}
+.footer_copyright_bottom a:hover {
+    color: #000;
+}
+.footer_link {
+    text-align: center;
+    line-height: 1.4;
+}
+.footer_link > div {
+    margin: 0px 10px;
+    position: relative;
+    display: inline-block;
+}
+.footer_link a {
+    text-decoration: none;
+    font-size: .75rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 300;
+    line-height: 1.4;
+}
+.link_vertical_bar::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 8px;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%;
+    right: -11px;
+    transform: translateY(-35%);
+}
+.age_limit {
+    width: 100%;
+    padding: 30px 20px;
+}
+.age_limit div {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px auto;
+}
+
+@media screen and (min-width:640px) {
+    .social_media_all h4 {
+        font-size: 1.5625rem;
+    }
+}

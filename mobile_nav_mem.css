@@ -1,0 +1,310 @@
+.nav_side_menu_bg {
+    width: 100%;
+    height: 100vh;
+    background-color: #00000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform: translateX(-100%);
+    transition: .1s;
+}
+.nav_side_menu {
+    width: 80%;
+    max-width: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #2f3543;
+    z-index: 10;
+    overflow-y: auto;
+}
+.side_menu_top {
+    padding: 40px 30px 30px 30px;
+    position: relative;
+}
+.close_side_menu {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    padding: 3px;
+}
+.close_side_menu svg {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.close_side_menu:hover svg {
+    color: rgba(0, 0, 0, 0.5);
+}
+.side_menu_mid {
+    width: 100%;
+}
+.side_menu_mid span, .side_menu_mid a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: .5px;
+}
+.side_menu_mid svg {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    transition: .2s;
+}
+.side_menu_mid span:hover, .side_menu_mid a:hover {
+    color: #f06414 !important;
+}
+.side_menu_mid > ul {
+    width: 100%;
+}
+.side_menu_mid > ul > li{
+    position: relative;
+}
+.side_menu_mid > ul > li > a, .side_menu_mid > ul > li > span {
+    width: 100%;
+    padding: 18px 30px;
+}
+.side_menu_mid li:hover > span, .side_menu_mid li:hover > a {
+    color: #f06414;
+}
+.side_menu_mid li li a {
+    padding: 11.2px 50px;
+}
+.side_menu_mid li ul {
+    background-color: #212529;
+}
+.side_menu_inner_list {
+    display: none;
+}
+.side_menu_hr::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e3dc;
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.side_menu_hr_bottom::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e3dc;
+    opacity: .2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.side_menu_bottom {
+    width: 100%;
+}
+.side_menu_buy {
+    width: 100%;
+    margin-top: 52px;
+    text-align: center;
+}
+.side_menu_buy a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    display: inline-block;
+    width: 90%;
+    padding: 18px 0px;
+    background-color: var(--COLOR_ORANGE);
+    text-align: center;
+    border-radius: 2px;
+    opacity: .9;
+}
+.side_menu_buy a:hover {
+    opacity: 1;
+}
+.side_menu_blizzard {
+    width: 100%;
+    padding: 20px 120px;
+}
+.side_menu_blizzard svg {
+    width: 100%;
+    height: 100%;
+    color: hsla(0,0%,100%,.2);
+}
+.membership_side_menu_bg {
+    width: 100%;
+    height: 100vh;
+    background-color: #00000000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    transform: translateX(100%);
+    transition: .1s;
+}
+.membership_side_menu {
+    width: 86%;
+    max-width: 320px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #2f3543;
+    z-index: 10;
+    overflow-y: auto;
+}
+.membership_side_menu_top {
+    padding: 18.8px 115.345px;
+    position: relative;
+}
+.membership_side_menu_top svg {
+    color: #00aeff;
+    transition: .2s;
+}
+.membership_blizzard_icon {
+    width: 88.31px;
+    height: 40px;
+}
+.membership_side_menu_close {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.membership_side_menu_close:hover svg {
+    color: #00c6ff;
+}
+.mem_side_menu_bordertop {
+    border-top: 1px solid hsla(0,0%,100%,.08);
+}
+.mem_side_menu_borderbottom {
+    border-bottom: 1px solid hsla(0,0%,100%,.08);
+}
+.membership_login {
+    text-align: center;
+    padding: 20px 0px;
+    position: relative;
+}
+.membership_login a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+    background-color: #006fb2;
+    border: 1px solid #00aeff;
+    display: inline-block;
+    width: 88%;
+    padding: 10px 0px;
+    transition: .3s;
+}
+.membership_login a:hover {
+    background-color: #007bc6;
+    border: 1px solid #79d4ff;
+}
+.membership_side_menu_mid {
+    background-color: rgba(0,0,0,.1);
+}
+.membership_side_menu_mid > ul > li {
+    width: 100%;
+    position: relative;
+}
+li.mobile_mem_button {
+    overflow: hidden;
+}
+.member_service a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: hsla(0,0%,100%,.7);
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 5px 0px;
+    display: inline-block;
+    width: 100%;
+}
+.membership_side_menu_mid svg {
+    width: 24px;
+    height: 24px;
+    vertical-align: -25%;
+    color: #00aeff;
+}
+li.membership_side_menu_decorate {
+    position: relative;
+}
+.membership_side_menu_decorate::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 43px;
+    background-color: #00aeff;
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+li.membership_side_menu_decorate_dark {
+    position: relative;
+}
+.membership_side_menu_decorate_dark::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 100%;
+    background-color: #2f3543;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.member_service {
+    padding: 4.5px 20px;
+}
+.membership_side_menu_bottom > ul > li {
+    position: relative;
+}
+.membership_side_menu_bottom > ul > li > span,
+.membership_side_menu_bottom > ul > li > a {
+    display: inline-block;
+    padding: 10.3px 20px;
+}
+.membership_side_menu_bottom a, .membership_side_menu_bottom span {
+    text-decoration: none;
+    font-size: 1rem;
+    color: hsla(0,0%,100%,.7);
+    font-weight: 400;
+    line-height: 1.4;
+}
+li.mobile_mem_esport_button {
+    overflow: hidden;
+}
+.member_service svg {
+    width: 24px;
+    height: 24px;
+}
+.mem_nav_btn svg {
+    width: 16px;
+    height: 16px;
+}
+.membership_game_list li {
+    padding: 8px 0px 8px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.membership_game_list a {
+    font-size: .875rem;
+    font-weight: 300;
+}
+.membership_game_list img, .membership_game_list svg {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    vertical-align: -25%;
+}
+.membership_game_list svg {
+    color: #00aeff;
+}

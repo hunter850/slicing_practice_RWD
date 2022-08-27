@@ -1,0 +1,92 @@
+.nav_web_mem_all {
+    width: 100%;
+    height: calc(100% - 40px);
+    background-color: #00000088;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 999;
+}
+.nav_web_mem_decorate::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #283244;
+    border-top: 1px solid hsla(0, 0%, 100%, .15);
+    border-right: 1px solid hsla(0, 0%, 100%, .15);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    position: absolute;
+    top: 0;
+    right: 36px;
+    /* z-index: 99; */
+}
+.nav_web_mem_wrap {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background: linear-gradient(rgb(40, 50, 68) 0px, rgba(21, 26, 35, 0.95));
+    border: 1px solid hsla(0,0%,100%,.15);
+}
+.nav_web_mem_upper {
+    padding: 20px;
+}
+.nav_web_mem_upper a {
+    display: inline-block;
+    width: 277px;
+    height: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+    background-color: #006fb2;
+    border: 1px solid #00aeff;
+    text-decoration: none;
+    transition: .2s;
+}
+.nav_web_mem_upper a:hover {
+    background-color: #007bc6;
+    border: 1px solid #79d4ff;
+}
+.nav_web_mem_under {
+    width: 100%;
+}
+.nav_web_mem_text {
+    width: 100%;
+    padding: 0px 20px;
+    border-top: 1px solid hsla(0,0%,100%,.08);
+}
+.nav_web_mem_text a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1rem;
+    color: #ffffffb3;
+    font-weight: 300;
+    line-height: 43px;
+    transition: .2s;  
+}
+.nav_web_mem_text:hover a {
+    color: #ffffff;
+}
+.nav_web_mem_text svg {
+    vertical-align: -13%;
+    width: 24px;
+    height: 24px;
+    color: #00aeff;
+    margin-right: 3px;
+    transition: .2s;
+}
+.nav_web_mem_text:hover svg {
+    color: #00c6ff;
+}
+@media screen and (min-width:1600px) {
+    .nav_web_mem_decorate::before {
+        right: calc(50% - 804px);
+    }
+    .nav_web_mem_wrap {
+        right: calc(50% - 820px);
+    }
+}
